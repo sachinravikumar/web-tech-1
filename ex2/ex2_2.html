@@ -12,6 +12,7 @@
             border: 2px solid black;
             padding: 10px;
         }
+
         fieldset {
             border: 1px solid #000;
             max-width: fit-content;
@@ -86,7 +87,7 @@
         </fieldset>
         <div class="slider-bois">
             <progress type="range" min=0 max=100 value=20 name="personal-range">
-            <label for="personal-range">20% out of 100%</label>
+                <label for="personal-range">20% out of 100%</label>
         </div>
     </section>
 
@@ -114,7 +115,7 @@
         </fieldset>
         <div class="slider-bois">
             <progress min=0 max=100 value=40 name="address-range">
-            <label for="">40% out of 100%</label>
+                <label for="">40% out of 100%</label>
         </div>
     </section>
 
@@ -128,7 +129,7 @@
                 </p>
                 <p>
                     <label for="mobile">*Mobile</label>
-                    <input type="phone" placeholder="(+91) 99999-99999" name="mobile">
+                    <input type="number" placeholder="(+91) 99999-99999" name="mobile" maxlength="10" pattern="\d{10}">
                 </p>
                 <p>
                     <label for="email">*Email</label>
@@ -142,7 +143,7 @@
         </fieldset>
         <div class="slider-bois">
             <progress min=0 max=100 value=60 name="contact-range">
-            <label for="">60% out of 100%</label>
+                <label for="">60% out of 100%</label>
         </div>
     </section>
 
@@ -232,7 +233,7 @@
         </fieldset>
         <div class="slider-bois">
             <progress min=0 max=100 value=80 name="educational-raange">
-            <label for="">80% out of 100%</label>
+                <label for="">80% out of 100%</label>
         </div>
     </section>
 
@@ -251,7 +252,7 @@
 
         <div class="slider-bois">
             <progress min=0 max=100 value=100 name="">
-            <label for="">100% out of 100%</label>
+                <label for="">100% out of 100%</label>
         </div>
     </section>
 
