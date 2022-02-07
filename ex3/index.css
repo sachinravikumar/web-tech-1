@@ -31,8 +31,8 @@ header h1 {
 nav {
   background-color: skyblue;
   display: inline-block;
+  width: calc(100vw - 37px);
   text-align: center;
-  width: 100%;
   padding: 10px;
 }
 
@@ -119,8 +119,12 @@ nav a {
   justify-content: space-around;
 }
 
+#family-section .family-item .center-img {
+  text-align: center;
+}
+
 #family-section .family-item p {
-  width: 20vw;
+  width: 300px;
 }
 
 #family-section .family-item h3 {
