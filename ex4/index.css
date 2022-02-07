@@ -1,0 +1,59 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url("https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2021/03/horizontal-lines-photography-3.jpg?w=1500&ssl=1");
+  width: 100vw;
+  height: 20vh;
+  float: right;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav {
+  background-color: skyblue;
+  display: inline-block;
+  width: calc(100vw - 37px);
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: black;
+  margin-right: 8vw;
+  margin-left: 8vw;
+  font-size: large;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#event-list {
+  background-color: pink;
+}
+
+li {
+  background-color: green;
+}
+
+li:nth-child(evenly) {
+  background-color: greenyellow;
+}
+
+li p {
+  margin: 0;
+}
+
+footer {
+  padding: 20px 0 40px 20px;
+  background-color: #ffe4c4;
+}
+
+footer p {
+  margin: 0px;
+  font-weight: bold;
+  font-style: oblique;
+}
