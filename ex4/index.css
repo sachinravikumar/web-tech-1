@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 header {
@@ -33,18 +34,76 @@ nav a {
 
 #event-list {
   background-color: pink;
+  padding-left: 15vw;
 }
 
-li {
+table {
   background-color: green;
+  border-collapse: collapse;
 }
 
-li:nth-child(evenly) {
+tr:nth-child(even) {
   background-color: greenyellow;
 }
 
-li p {
+table:first-child {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+table:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+table span {
+  margin: 0 100px;
+}
+
+table h3 {
   margin: 0;
+}
+
+#user-section {
+  background: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/The_Importance_of_User_Authentication_Methods_in_Cyber_Security.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+#user-section label {
+  font-weight: bold;
+}
+
+#user-section input {
+  height: 30px;
+  width: 100%;
+  background-color: rgb(224, 224, 224);
+  border-radius: 5px;
+  border: 0px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+#user-section button {
+  background-color: #0166ff;
+  width: 100%;
+  height: 30px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.user-form {
+  width: 30%;
+  height: max-content;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.user-form h2 {
+  text-align: center;
 }
 
 footer {
