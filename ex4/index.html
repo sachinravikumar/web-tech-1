@@ -81,40 +81,42 @@
     <section id="user-section">
         <div id="signup" class="user-form">
             <h2>Sign In</h2>
-            <p>
-                <label for="login-username">Username</label>
+            <form action="" id="login-form">
+                <p>
+                    <label for="login-username">Username</label>
+                    <br>
+                    <input type="text" id="login-username" name="login-username" placeholder="hiruthicSha">
+                </p>
+                <p>
+                    <label for="login-password">Password</label>
+                    <br>
+                    <input type="password" id="login-password" name="login-password" placeholder="Enter Password">
+                </p>
                 <br>
-                <input type="text" id="login-username" name="login-username" placeholder="hiruthicSha">
-            </p>
-            <p>
-                <label for="login-password">Password</label>
-                <br>
-                <input type="password" id="login-password" name="login-password" placeholder="Enter Password">
-            </p>
-
-            <br>
-            <button>Sign in</button>
+                <button id="signin-button">Sign in</button>
+            </form>
         </div>
         <div id="signin" class="user-form">
             <h2>Sign In</h2>
-            <p>
-                <label for="username">Username</label>
+            <form action="" id="signup-form">
+                <p>
+                    <label for="username">Username</label>
+                    <br>
+                    <input type="text" id="username" name="username" placeholder="hiruthicSha">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="jhon@edu.in">
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="Enter Password">
+                </p>
                 <br>
-                <input type="text" id="username" name="username" placeholder="hiruthicSha">
-            </p>
-            <p>
-                <label for="email">Email</label>
-                <br>
-                <input type="email" id="email" name="email" placeholder="jhon@edu.in">
-            </p>
-            <p>
-                <label for="password">Password</label>
-                <br>
-                <input type="password" id="password" name="password" placeholder="Enter Password">
-            </p>
-
-            <br>
-            <button>Sign up</button>
+                <button id="signup-button">Sign up</button>
+            </form>
         </div>
     </section>
 
@@ -123,6 +125,8 @@
         <p>1/100, West Virginia, Mountain Mama, Alabama, 123456</p>
         <p>&copy 2020 - 2021. (URK19CS2017) - Web Technology Lab Batch 1. All Rights reserved</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
