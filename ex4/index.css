@@ -68,8 +68,9 @@ table h3 {
   background: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/The_Importance_of_User_Authentication_Methods_in_Cyber_Security.jpg") no-repeat;
   background-size: cover;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 #user-section label {
