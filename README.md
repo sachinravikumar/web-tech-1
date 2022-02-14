@@ -10,3 +10,4 @@
   - [Ex 2_2](ex2/ex2_2.html) : Forms and shit
 - [Ex 3](ex3/) : Responsive portfolio thingy
 - [Ex 4](ex4/) : Wepage design using advanced CSS
+- [Ex 5](ex5/) : JS - DOM Elements and Events
