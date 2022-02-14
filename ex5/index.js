@@ -18,7 +18,7 @@ document.getElementById("bmi-compute").addEventListener("click", (e) => {
     const height = document.getElementById("height").value;
     const weight = document.getElementById("weight").value;
 
-    const bmi = weight / height;
+    const bmi = weight / ((height / 100) ** 2);
     let type = "Unknown";
 
     if (bmi < 18.5) type = "Underweight";
