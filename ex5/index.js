@@ -75,3 +75,24 @@ document.getElementById("submit").addEventListener("click", (e) => {
 
     document.getElementById("price").innerText = cost;
 });
+
+document.getElementById("farm-compute").addEventListener("click", (e) => {
+    const rows = document.getElementById("rows").value;
+    const columns = document.getElementById("columns").value;
+    const farm = document.getElementById("farm");
+    farm.innerHTML = "";
+
+    for (let i = 0; i < rows; i++) {
+        const tr = document.createElement("tr");
+
+        for (let j = 0; j < columns; j++) {
+            const image = Math.random() > 0.5 ? "apple.svg" : "orange.svg";
+            
+            const td = document.createElement("td");
+            td.innerHTML = `<img src='${image}' width=100px height=100px>`;
+            tr.appendChild(td);
+        }
+
+        farm.appendChild(tr);
+    }
+});
