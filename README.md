@@ -11,3 +11,4 @@
 - [Ex 3](ex3/) : Responsive portfolio thingy
 - [Ex 4](ex4/) : Wepage design using advanced CSS
 - [Ex 5](ex5/) : JS - DOM Elements and Events
+- [Ex 6](ex6/) : JAVASCRIPT – TIMER FUNCTIONS AND OBJECTS
