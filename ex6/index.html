@@ -6,34 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex 6</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <style>
+        h1{
+            text-align: center;
+        }
         body {
-            font-family: 'Kanit', sans-serif;
+            font-family: sans-serif;
         }
 
         #time {
             text-align: center;
-            font-size: 160px;
+            font-size: 170px;
         }
 
-        #secs {
-            font-size: 20px;
-            color: red;
-            font-weight: 800;
-        }
     </style>
     <h1 id="title" onmouseout="dec()" onmouseover="inc()">Digital Clock</h1>
     <div id="time"></div>
 
     <div id="car-block">
-        <img id="car-image" style="position: relative; left: 0px;" src="car_icon.png" alt="Car" widht="100px"
+        <img id="car-image" style="position: relative; left: 0px;" src="pngwing.com.png" alt="Car" widht="100px"
             height="100px">
         <input type="button" id="move" value="Move">
         <input type="button" id="stop" value="Stop">
@@ -42,7 +36,7 @@
     <br>
 
     <div id="objects">
-        <table id="obj-table" border="1">
+        <table id="obj-table" border="2">
             <thead>
                 <td>Name</td>
                 <td>Reg</td>
@@ -68,7 +62,7 @@
             const minute = date.getMinutes();
             const seconds = date.getSeconds();
 
-            document.getElementById("time").innerHTML = `<span>${hour}:${minute}</span><span id="secs">  ${seconds}</span>`;
+            document.getElementById("time").innerHTML = `${hour}:${minute}:${seconds}`;
 
         }, 1000);
 
@@ -118,9 +112,9 @@
 
         // Q5
         const objects = [
-            { name: "Hiruthic", reg: "URK19CS2017", dob: new Date(2002, 4, 18), },
+            { name: "Sachin", reg: "URK19CS2009", dob: new Date(2002, 4, 18), },
             { name: "Shiva", reg: "URK19CS2018", dob: new Date(2001, 8, 28), },
-            { name: "SachJi", reg: "URK19CS2009", dob: new Date(2001, 2, 8), },
+            { name: "Hiruthic", reg: "URK19CS2017", dob: new Date(2001, 2, 8), },
         ];
 
         objects.forEach((object) => {
