@@ -81,6 +81,7 @@
 
         let movement;
         let speed = 10;
+        let isMoving = false;
 
         const move = () => {
             const car = document.getElementById("car-image");
@@ -93,11 +94,14 @@
         }
 
         document.getElementById("move").addEventListener("click", (e) => {
-            if (movement != undefined) return;
+            if (isMoving) return;
             move();
         });
 
-        document.getElementById("stop").addEventListener("click", (e) => clearInterval(movement));
+        document.getElementById("stop").addEventListener("click", (e) => {
+            isMoving = false;
+            clearInterval(movement);
+        });
         document.getElementById("accelerator").addEventListener(
             "input",
             (e) => {
