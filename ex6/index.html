@@ -93,6 +93,7 @@
         }
 
         document.getElementById("move").addEventListener("click", (e) => {
+            if (movement != undefined) return;
             move();
         });
 
